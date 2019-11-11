@@ -1,0 +1,17 @@
+-
+  var myFullName = 'Bianca Andrei'
+  var myJobTitle = 'trainer'
+  var socialList = [
+    {icon:'facebook2', url: 'https://www.facebook.com/profile.php?id=100008232734116'},
+    {icon: 'youtube', url: 'https://youtube.com/UCGYp9uF9YAKt1U95pqF1dtQ'},
+  ]
+#landing-page
+.landing-page
+  .landing-page__wrapper
+    h1.landing-page__name=myFullName
+    h2.landing-page__title=myJobTitle
+    ul.landing-page__social
+      each social in socialList
+        li.landing-page__item
+          label.landing-page__label(for="")
+            span(class=`my-cv__icon-${social.icon}`)
