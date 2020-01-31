@@ -19,7 +19,7 @@
                 label: 'Click to visit the GitHub project source',
             }
             ,{
-                url: 'asset/doc/cv-bianca.docx',
+                url: 'asset/doc/Resume-Bianca-Andrei.docx',
                 icon: 'file-word',
                 label: 'Click to download "CV" Microsoft Word version',
             }
@@ -40,7 +40,7 @@
 
     .about-me__title=coolStuff.title
     .about-me__link-list
-        each button in coolStuff.buttonList
-            a.about-me__link(href=button.url)
-                span.about-me__link-description=button.label
-                span(class=`my-cv__icon-${button.icon}`)
+                each button in coolStuff.buttonList
+                    a.about-me__link(href=button.url)
+                        span.about-me__link-description=button.label
+                        span(class=`my-cv__icon-${button.icon}`)
